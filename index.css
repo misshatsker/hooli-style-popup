@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: end; 
+    align-items: center;
+    background-color: bisque;
+    height: 80px;    
+}
+
+.avatar {
+    background-image: url(/media/avatar.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: relative; 
+    margin-right: 20px;
+}
+
+.avatar:hover {
+    cursor: pointer;
+}
+
+.nav-item {
+    margin: 5px;    
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+.link:hover {
+    border: 1px solid red;    
+}
