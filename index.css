@@ -12,7 +12,7 @@ nav {
 }
 
 .avatar {
-    background-image: url(/media/avatar.jpg);
+    background-image: url(/media/icons/avatar.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -39,4 +39,66 @@ nav {
 
 .link:hover {
     border: 1px solid red;    
+}
+
+.popup {
+    border: 1px solid rebeccapurple;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 270px;
+    max-height: 435px;
+    background-color: rgb(219, 185, 250); 
+    position: relative;   
+    overflow: auto;    
+}
+
+
+.popup .item-content { 
+  margin-left: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  background-color: rgba(80, 82, 78, 0.162);
+  height: fit-content;
+  padding: 15px;
+  border-radius: 5px;
+  width: 40px;
+}
+
+.popup .item-content img {
+    height: 40px;
+    width: 40px;    
+}
+
+.popup .item-content:hover {
+    background-color: rgba(80, 82, 78, 0.162);
+}
+
+.popup-more {
+    margin: 25px auto;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+.popup-more:hover {
+       
+    cursor: pointer;    
+}
+
+
+
+.text {
+    text-align: center;
+}
+
+.more-section {
+    display: flex;
+    flex-wrap: wrap;
+
 }
