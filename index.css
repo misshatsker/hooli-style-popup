@@ -1,13 +1,14 @@
-
 * {
     margin: 0;
     padding: 0;
 }
+
 body {
-    background-color: #e14590b8;
-    font-family: 'EB Garamond','Raleway', 'DynaPuff',  sans-serif;
+    font-family: 'EB Garamond', 'Raleway', 'DynaPuff', sans-serif;
     font-size: 18px;
+    background-color: #e14590b8;
 }
+
 nav {
     display: flex;
     justify-content: end; 
@@ -21,6 +22,10 @@ nav {
     margin: 5px;    
 }
 
+.profile {
+    margin-right: 20px;
+}
+
 .avatar {
     background-image: url(/media/mira.jpg);
     background-position: center;
@@ -29,6 +34,15 @@ nav {
     height: 50px;
     width: 50px;
     position: relative; 
+}
+
+.avatar-icon {
+    background-image: url(/media/mira.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
     margin-right: 20px;
 }
 
@@ -47,10 +61,34 @@ nav {
     border: 1px solid #640007;   
 }
 
+.hidden-toggle-input {
+    display: none;
+}
+
+.hidden-toggle-input:checked ~ .popup {
+    display: flex;
+}
+
+.services-toggle-button {
+    display: block;
+    margin-right: 15px;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+.services-toggle-button .services-icon {
+    height: 25px;
+    display: block;
+}
+
+.services-toggle-button:hover {
+    border: 1px solid #640007;
+    cursor: pointer;
+}
+
 .popup {
     border: 1px solid transparent;
     border-radius: 10px;
-    display: flex;
     flex-wrap: wrap;
     width: 315px;
     max-height: 435px;
@@ -59,9 +97,8 @@ nav {
     position: absolute;
     right: 20px;
     top: 100%;
-      
+    display: none;  
 }
-
 
 .popup .item-content { 
   margin-left: 15px;
@@ -80,32 +117,24 @@ nav {
     display: block;
 }
 
-.popup .item-content:hover {
-    background-color: #e14590b8;
-}
-
-/* .popup-more {
-    margin: 25px auto;
-    margin-bottom: 5px;
-    text-decoration: none;
-    color: black;
-    border: none;
-    border-radius: 30px;
-    padding: 10px 40px;
-    font-size: 20px;
-    font-weight: 300;
-
-}
-.popup-more:hover {
-       
-    cursor: pointer;    
-} */ 
-
-.text {
+.popup .item-content .text {
     text-align: center;
     text-overflow: ellipsis;
     overflow: hidden;
     margin-top: 5px;
+}
+
+.popup .item-content:hover {
+    background-color: #e14590b8;
+}
+
+.hidden-toggle-input:checked ~ .more-section {
+    display: flex;
+    height: auto;
+}
+
+.hidden-toggle-input:checked ~ .more-toggle-button {
+    margin-bottom: 5px;
 }
 
 .more-section {
@@ -114,17 +143,7 @@ nav {
     margin-bottom: 15px;
 }
 
-.input-popup-more:checked ~ .more-section {
-    display: flex;
-    height: auto;
-}
-
-.input-popup-more:checked ~ .checkbox-popup-more {
-    margin-bottom: 5px;
-}
-
-/* кнопка more */
-.checkbox-popup-more {
+.more-toggle-button {
     width: 315px;
     text-align: center;
     margin: 20px;
@@ -136,57 +155,4 @@ nav {
     border-radius: 30px;
     padding: 10px 25px;
     cursor: pointer;
-}
-
-.input-popup-more {
-    /* appearance: none; */
-    position: absolute;
-}
-
-.avatar-icon {
-    background-image: url(/media/mira.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    margin-right: 20px;
-}
-
-.show-button {
-    display: none;
-}
-
-.element-button {
-    display: none;
-}
-
-.input-element:checked ~ .checkbox-popup-element {
-    display: flex;
-    height: auto;
-}
-.input-element:checked ~ .element {
-    display: block;
-}
-
-.element {
-    flex-wrap: wrap;
-   display: none;
-    
-}
-img {
-    height: 25px;
-    width: 25px;
-}
-
-.checkbox-popup-element {
-    margin-right: 15px;
-    padding: 10px;
-    border: 1px solid transparent;
-}
-
-.checkbox-popup-element:hover {
-    border: 1px solid #640007;
-    cursor: pointer;
-    
 }
