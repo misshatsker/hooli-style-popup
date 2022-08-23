@@ -182,6 +182,7 @@ body {
 }
 
 .hidden-toggle-input:checked ~ .more-toggle-button {
+    display: none;
     margin-bottom: 5px;
 }
 
