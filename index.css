@@ -18,7 +18,8 @@ body {
     background-color: var(--pink);
 }
 
-nav {
+.nav {
+    list-style-type: none;
     display: flex;
     justify-content: end; 
     align-items: center;
@@ -125,6 +126,7 @@ nav {
 }
 
 .popup-items {
+    list-style-type: none;
     max-height: 435px;
     overflow-y: scroll;
     display: flex;
@@ -153,7 +155,7 @@ nav {
   width: 55px;
 }
 
-.popup-items .item-content img {
+.popup-items .item-content .icon {
     height: 40px;
     width: 40px;
     margin: 0 auto; 
@@ -161,6 +163,7 @@ nav {
 }
 
 .popup-items .item-content .text {
+    display: block;
     text-align: center;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -183,6 +186,7 @@ nav {
 }
 
 .more-section {
+    list-style-type: none;
     flex-wrap: wrap;
     display: none;
     margin-bottom: 15px;
